@@ -1,345 +1,627 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <title>Sita Neupane | Portfolio</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Sita Neupane | Automotive Tech Specialist & Software Architect
+    </title>
+    <meta
+      name="description"
+      content="Senior Software Engineer specializing in automotive technology, with deep domain expertise in VIN decoding, dealer networks, and parts cataloging systems."
+    />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+    />
+
+    <!-- AOS Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <!-- Custom Styles -->
     <link rel="stylesheet" href="style.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
-    />
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@700;400&display=swap"
-      rel="stylesheet"
-    />
   </head>
   <body>
-    <div class="portfolio">
-      <!-- Hero Section -->
-      <section class="hero">
-        <div class="hero-bg"></div>
-        <div class="hero-content" data-aos="fade-down">
-          <img src="profile.jpeg" alt="Sita Neupane" class="profile-image" />
-          <h1 class="hero-title">
-            <span class="typewriter">Hi, I'm Sita Neupane</span>
-          </h1>
-          <p class="hero-tagline">
-            Automotive Tech Specialist & Software Architect
-          </p>
-          <p class="hero-subtitle">
-            Building systems that power the future of automotive commerce
-          </p>
-          <a href="#contact" class="cta-btn">Let's Connect</a>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+      <div class="nav-container">
+        <div class="nav-logo">
+          <span class="logo-text">SN</span>
         </div>
-      </section>
+        <ul class="nav-menu" id="nav-menu">
+          <li><a href="#hero" class="nav-link">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#expertise" class="nav-link">Expertise</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#leadership" class="nav-link">Leadership</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+        <div class="nav-toggle" id="mobile-menu">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </div>
+    </nav>
 
-      <!-- About Section -->
-      <section class="about" data-aos="fade-up">
-        <h2>About Me</h2>
-        <p>
-          I'm a <span class="highlight">Senior Software Engineer</span> with
-          deep expertise in the automotive industry. Over
-          <span class="highlight">6+ years</span>, I've specialized in building
-          scalable systems that connect
-          <strong>dealers, workshops, insurance companies</strong>, and end
-          customers through complex automotive ecosystems.
-        </p>
-        <p>
-          My unique combination of technical expertise and
-          <strong>automotive domain knowledge</strong> allows me to architect
-          solutions that truly understand how VIN numbers, part catalogues,
-          brand dealer associations, and the aftermarket vs genuine parts
-          ecosystem work together.
-        </p>
-      </section>
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+      <div class="hero-background">
+        <div class="gradient-orb orb-1"></div>
+        <div class="gradient-orb orb-2"></div>
+        <div class="gradient-orb orb-3"></div>
+      </div>
+      <div class="hero-container">
+        <div class="hero-content" data-aos="fade-up" data-aos-duration="1000">
+          <div class="profile-wrapper">
+            <img
+              src="profile.jpeg"
+              alt="Sita Neupane - Senior Software Engineer"
+              class="profile-image"
+            />
+            <div class="profile-ring"></div>
+          </div>
+          <h1 class="hero-title">
+            <span class="greeting">Hi, I'm</span>
+            <span class="name">Sita Neupane</span>
+          </h1>
+          <div class="hero-subtitle">
+            <span class="typing-text"
+              >Automotive Tech Specialist & Software Architect</span
+            >
+          </div>
+          <p class="hero-description">
+            Transforming the automotive industry through innovative software
+            solutions. Specializing in dealer networks, VIN systems, and parts
+            catalog architectures.
+          </p>
+          <div class="hero-stats">
+            <div class="stat-item" data-aos="fade-up" data-aos-delay="200">
+              <span class="stat-number">6+</span>
+              <span class="stat-label">Years Experience</span>
+            </div>
+            <div class="stat-item" data-aos="fade-up" data-aos-delay="300">
+              <span class="stat-number">10K+</span>
+              <span class="stat-label">Orders Processed</span>
+            </div>
+            <div class="stat-item" data-aos="fade-up" data-aos-delay="400">
+              <span class="stat-number">50+</span>
+              <span class="stat-label">Dealer APIs</span>
+            </div>
+          </div>
+          <div class="hero-cta" data-aos="fade-up" data-aos-delay="500">
+            <a href="#contact" class="btn btn-primary">
+              <span>Let's Connect</span>
+              <i class="fas fa-arrow-right"></i>
+            </a>
+            <a href="#projects" class="btn btn-secondary">
+              <span>View My Work</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
 
-      <!-- Domain Expertise Section -->
-      <section class="domain-expertise" data-aos="fade-up">
-        <h2>Automotive Domain Expertise</h2>
+    <!-- About Section -->
+    <section class="about" id="about">
+      <div class="container">
+        <div class="section-header" data-aos="fade-up">
+          <span class="section-tag">Get to know me</span>
+          <h2 class="section-title">About Me</h2>
+        </div>
+        <div class="about-content">
+          <div class="about-text" data-aos="fade-right">
+            <p class="text-large">
+              I'm a <strong>Senior Software Engineer</strong> with deep
+              expertise in the automotive industry ecosystem. Over
+              <strong>6+ years</strong>, I've specialized in building scalable
+              systems that connect
+              <strong>dealers, workshops, insurance companies</strong>, and end
+              customers.
+            </p>
+            <p>
+              My unique combination of technical expertise and
+              <strong>automotive domain knowledge</strong>
+              allows me to architect solutions that truly understand how VIN
+              numbers, part catalogues, brand dealer associations, and the
+              aftermarket vs genuine parts ecosystem work together.
+            </p>
+            <p>
+              I bridge the gap between complex automotive business logic and
+              elegant, maintainable code that powers the future of automotive
+              commerce.
+            </p>
+          </div>
+          <div class="about-skills" data-aos="fade-left">
+            <h3>Core Technologies</h3>
+            <div class="skills-grid">
+              <span class="skill-tag">Ruby on Rails</span>
+              <span class="skill-tag">AWS (SQS, SNS, ECS, Lambda)</span>
+              <span class="skill-tag">GraphQL</span>
+              <span class="skill-tag">Docker</span>
+              <span class="skill-tag">TypeScript</span>
+              <span class="skill-tag">Pusher</span>
+              <span class="skill-tag">SFTP Integration</span>
+              <span class="skill-tag">Third-party APIs</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Domain Expertise Section -->
+    <section class="expertise" id="expertise">
+      <div class="container">
+        <div class="section-header" data-aos="fade-up">
+          <span class="section-tag">My Specialization</span>
+          <h2 class="section-title">Automotive Domain Expertise</h2>
+          <p class="section-description">
+            Deep understanding of automotive industry complexities, from VIN
+            decoding to dealer networks
+          </p>
+        </div>
         <div class="expertise-grid">
-          <div class="expertise-card">
-            <div class="expertise-icon">
+          <div class="expertise-card" data-aos="fade-up" data-aos-delay="100">
+            <div class="card-icon">
               <i class="fas fa-car"></i>
             </div>
             <h3>Vehicle Systems & VIN Decoding</h3>
             <p>
-              Deep understanding of how vehicle identification works, part
-              compatibility, and cross-referencing systems across different
-              manufacturers.
+              Comprehensive understanding of how vehicle identification works,
+              part compatibility matrices, and cross-referencing systems across
+              different manufacturers and model years.
             </p>
+            <div class="card-tags">
+              <span>VIN Parsing</span>
+              <span>Part Compatibility</span>
+              <span>OEM Standards</span>
+            </div>
           </div>
-          <div class="expertise-card">
-            <div class="expertise-icon">
+
+          <div class="expertise-card" data-aos="fade-up" data-aos-delay="200">
+            <div class="card-icon">
               <i class="fas fa-network-wired"></i>
             </div>
             <h3>Dealer Network Integration</h3>
             <p>
-              Experience with dealer APIs, brand dealer associations, and the
-              complex relationships between OEMs, distributors, and local
-              dealers.
+              Expert knowledge of dealer APIs, brand dealer associations, and
+              the complex relationships between OEMs, distributors, local
+              dealers, and their inventory management systems.
             </p>
+            <div class="card-tags">
+              <span>API Integration</span>
+              <span>Inventory Sync</span>
+              <span>Real-time Updates</span>
+            </div>
           </div>
-          <div class="expertise-card">
-            <div class="expertise-icon">
+
+          <div class="expertise-card" data-aos="fade-up" data-aos-delay="300">
+            <div class="card-icon">
               <i class="fas fa-shield-alt"></i>
             </div>
             <h3>Insurance & Workshop Ecosystem</h3>
             <p>
-              Built systems connecting insurance providers with certified
-              workshops, handling claims processing and parts sourcing
-              workflows.
+              Built comprehensive systems connecting insurance providers with
+              certified workshops, handling claims processing, parts sourcing,
+              and repair workflow automation.
             </p>
+            <div class="card-tags">
+              <span>Claims Processing</span>
+              <span>Workshop Management</span>
+              <span>Quality Assurance</span>
+            </div>
           </div>
-          <div class="expertise-card">
-            <div class="expertise-icon">
+
+          <div class="expertise-card" data-aos="fade-up" data-aos-delay="400">
+            <div class="card-icon">
               <i class="fas fa-cogs"></i>
             </div>
             <h3>Aftermarket vs Genuine Parts</h3>
             <p>
-              Architected catalogue systems that distinguish between OEM,
-              genuine, and aftermarket parts, with quality ratings and
-              compatibility checks.
+              Architected intelligent catalogue systems that distinguish between
+              OEM, genuine, and aftermarket parts with quality ratings,
+              compatibility checks, and pricing optimization.
             </p>
+            <div class="card-tags">
+              <span>Parts Classification</span>
+              <span>Quality Metrics</span>
+              <span>Price Optimization</span>
+            </div>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <!-- Featured Projects -->
-      <section class="projects" data-aos="fade-up">
-        <h2>Featured Projects</h2>
-        <div class="project-cards">
-          <div class="project-card featured">
-            <img
-              src="software-engineer-portfolio.jpg"
-              alt="Automotive Platform"
-              class="project-image"
-            />
-            <div class="project-info">
-              <h3>Automotive Parts Ecosystem Platform</h3>
+    <!-- Projects Section -->
+    <section class="projects" id="projects">
+      <div class="container">
+        <div class="section-header" data-aos="fade-up">
+          <span class="section-tag">My Work</span>
+          <h2 class="section-title">Featured Projects</h2>
+        </div>
+        <div class="projects-grid">
+          <div
+            class="project-card featured"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
+            <div class="project-image">
+              <img
+                src="software-engineer-portfolio.jpg"
+                alt="Automotive Parts Ecosystem Platform"
+              />
+              <div class="project-overlay">
+                <a
+                  href="https://github.com/goparts/catalogue-api-service"
+                  target="_blank"
+                  class="project-link"
+                >
+                  <i class="fab fa-github"></i>
+                </a>
+              </div>
+            </div>
+            <div class="project-content">
+              <div class="project-header">
+                <h3>Automotive Parts Ecosystem Platform</h3>
+                <span class="project-badge">Featured</span>
+              </div>
               <p>
-                Architected a comprehensive platform that revolutionized how the
-                automotive parts industry operates. The system handles
+                Architected a revolutionary platform that transformed automotive
+                parts commerce. The system handles
                 <strong
                   >VIN decoding, real-time dealer integrations, workshop
                   management, and insurance workflows</strong
-                >.
+                >
+                in a unified ecosystem.
               </p>
               <div class="project-highlights">
-                <div class="highlight-stat">
-                  <span class="stat-number">10,000+</span>
-                  <span class="stat-label">Annual Orders</span>
+                <div class="highlight-item">
+                  <i class="fas fa-chart-line"></i>
+                  <span><strong>10,000+</strong> Annual Orders</span>
                 </div>
-                <div class="highlight-stat">
-                  <span class="stat-number">50+</span>
-                  <span class="stat-label">Dealer APIs</span>
+                <div class="highlight-item">
+                  <i class="fas fa-plug"></i>
+                  <span><strong>50+</strong> Dealer APIs Integrated</span>
                 </div>
-                <div class="highlight-stat">
-                  <span class="stat-number">1M+</span>
-                  <span class="stat-label">Parts Catalogued</span>
+                <div class="highlight-item">
+                  <i class="fas fa-database"></i>
+                  <span><strong>1M+</strong> Parts Catalogued</span>
                 </div>
               </div>
-              <div class="tech-stack">
-                <span>AWS (SQS, SNS, ECS, Lambda)</span><span>Rails</span
-                ><span>GraphQL</span><span>Pusher</span
-                ><span>SFTP Integration</span>
+              <div class="project-tech">
+                <span>AWS</span>
+                <span>Ruby on Rails</span>
+                <span>GraphQL</span>
+                <span>Pusher</span>
+                <span>SFTP</span>
               </div>
-              <a
-                href="https://github.com/goparts/catalogue-api-service"
-                target="_blank"
-                class="project-link"
-                ><i class="fab fa-github"></i> View Architecture</a
-              >
             </div>
           </div>
 
-          <div class="project-card">
-            <div class="project-info">
+          <div class="project-card" data-aos="fade-up" data-aos-delay="200">
+            <div class="project-content">
               <h3>Enterprise Event Management Platform</h3>
               <p>
                 Developed a scalable event management platform trusted by global
-                brands like <strong>LG and Tommy Hilfiger</strong>. Built with
-                real-time capabilities and enterprise-grade security.
+                brands like
+                <strong>LG and Tommy Hilfiger</strong>. Built with real-time
+                capabilities and enterprise-grade security features.
               </p>
-              <div class="tech-stack">
-                <span>Node.js</span><span>React</span><span>WebSockets</span
-                ><span>AWS</span>
+              <div class="project-tech">
+                <span>Node.js</span>
+                <span>React</span>
+                <span>WebSockets</span>
+                <span>AWS</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card" data-aos="fade-up" data-aos-delay="300">
+            <div class="project-content">
+              <h3>Multi-Service Authentication System</h3>
+              <p>
+                Built secure, scalable authentication infrastructure using AWS
+                Cognito with federated login support for automotive ecosystem
+                participants.
+              </p>
+              <div class="project-tech">
+                <span>AWS Cognito</span>
+                <span>OAuth 2.0</span>
+                <span>JWT</span>
+                <span>API Gateway</span>
               </div>
             </div>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <!-- Leadership Section -->
-      <section class="leadership" data-aos="fade-up">
-        <h2>Leadership & Community Impact</h2>
-        <div class="leadership-cards">
-          <div class="leadership-card">
+    <!-- Leadership Section -->
+    <section class="leadership" id="leadership">
+      <div class="container">
+        <div class="section-header" data-aos="fade-up">
+          <span class="section-tag">Community Impact</span>
+          <h2 class="section-title">Leadership & Achievements</h2>
+        </div>
+        <div class="leadership-grid">
+          <div
+            class="leadership-card"
+            data-aos="fade-right"
+            data-aos-delay="100"
+          >
             <div class="leadership-icon">
               <i class="fab fa-microsoft"></i>
             </div>
-            <h3>Microsoft Student Partner (MSP)</h3>
-            <div class="leadership-achievements">
-              <div class="achievement">
-                <i class="fas fa-users"></i>
-                <span
-                  >Organized Azure Bootcamp for
-                  <strong>200+ students</strong></span
-                >
-              </div>
-              <div class="achievement">
-                <i class="fas fa-trophy"></i>
-                <span
-                  >Presented Imagine Cup to
-                  <strong>500+ college students</strong></span
-                >
-              </div>
-              <div class="achievement">
-                <i class="fas fa-chalkboard-teacher"></i>
-                <span>Led multiple utility bootcamps and tech workshops</span>
+            <div class="leadership-content">
+              <h3>Microsoft Student Partner (MSP)</h3>
+              <p class="leadership-description">
+                Led technical evangelism and community building initiatives,
+                organizing large-scale educational events and promoting
+                Microsoft technologies among students.
+              </p>
+              <div class="achievements-list">
+                <div class="achievement-item">
+                  <i class="fas fa-users"></i>
+                  <div>
+                    <strong>Azure Bootcamp Leadership</strong>
+                    <span
+                      >Organized comprehensive Azure bootcamp engaging 200+
+                      students</span
+                    >
+                  </div>
+                </div>
+                <div class="achievement-item">
+                  <i class="fas fa-trophy"></i>
+                  <div>
+                    <strong>Imagine Cup Evangelism</strong>
+                    <span
+                      >Presented Microsoft's global competition to 500+ college
+                      students</span
+                    >
+                  </div>
+                </div>
+                <div class="achievement-item">
+                  <i class="fas fa-chalkboard-teacher"></i>
+                  <div>
+                    <strong>Technical Workshops</strong>
+                    <span
+                      >Conducted multiple utility bootcamps and hands-on
+                      technical sessions</span
+                    >
+                  </div>
+                </div>
               </div>
             </div>
           </div>
 
-          <div class="leadership-card">
+          <div
+            class="leadership-card"
+            data-aos="fade-left"
+            data-aos-delay="200"
+          >
             <div class="leadership-icon">
               <i class="fas fa-lightbulb"></i>
             </div>
-            <h3>Hult Prize Campus Representative</h3>
-            <div class="leadership-achievements">
-              <div class="achievement">
-                <i class="fas fa-globe"></i>
-                <span
-                  >Led campus awareness sessions for
-                  <strong>UN SDG-aligned</strong> startup competition</span
-                >
-              </div>
-              <div class="achievement">
-                <i class="fas fa-handshake"></i>
-                <span
-                  >Coordinated student teams pitching innovative tech
-                  solutions</span
-                >
-              </div>
-              <div class="achievement">
-                <i class="fas fa-calendar-check"></i>
-                <span
-                  >Hosted on-campus final event of international
-                  competition</span
-                >
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Skills & Toolbox -->
-      <section class="skills" data-aos="fade-up">
-        <h2>Technical Toolbox</h2>
-        <div class="skills-categories">
-          <div class="skill-category">
-            <h3>Backend & APIs</h3>
-            <div class="skills-grid">
-              <span>Ruby on Rails</span><span>GraphQL</span><span>Node.js</span
-              ><span>REST APIs</span>
-            </div>
-          </div>
-          <div class="skill-category">
-            <h3>Cloud & Infrastructure</h3>
-            <div class="skills-grid">
-              <span>AWS (SQS, SNS, ECS, Lambda)</span><span>Docker</span
-              ><span>SFTP</span><span>Pusher</span>
-            </div>
-          </div>
-          <div class="skill-category">
-            <h3>Frontend & Integration</h3>
-            <div class="skills-grid">
-              <span>TypeScript</span><span>React</span><span>WebSockets</span
-              ><span>Third-party APIs</span>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Timeline/Experience -->
-      <section class="timeline" data-aos="fade-up">
-        <h2>Professional Journey</h2>
-        <div class="timeline-list">
-          <div class="timeline-item">
-            <div class="timeline-dot"></div>
-            <div class="timeline-content">
-              <h3>Senior Software Engineer - Automotive Tech</h3>
-              <p class="timeline-period">2021 - Present</p>
-              <p>
-                Revolutionizing automotive parts commerce through scalable
-                systems connecting dealers, workshops, and insurers. Built
-                platforms handling <strong>10k+ annual orders</strong> with deep
-                integration across the automotive ecosystem.
+            <div class="leadership-content">
+              <h3>Hult Prize Campus Representative</h3>
+              <p class="leadership-description">
+                Served as official campus representative for the world's largest
+                student startup competition, focusing on UN Sustainable
+                Development Goals and social entrepreneurship.
               </p>
-            </div>
-          </div>
-          <div class="timeline-item">
-            <div class="timeline-dot"></div>
-            <div class="timeline-content">
-              <h3>Full Stack Developer - Event Platforms</h3>
-              <p class="timeline-period">2019 - 2021</p>
-              <p>
-                Architected enterprise event management platform for global
-                brands, focusing on scalability and real-time features.
-              </p>
-            </div>
-          </div>
-          <div class="timeline-item">
-            <div class="timeline-dot"></div>
-            <div class="timeline-content">
-              <h3>Microsoft Student Partner & Community Leader</h3>
-              <p class="timeline-period">2017 - 2019</p>
-              <p>
-                Led technical workshops, organized bootcamps, and represented
-                international competitions at university level.
-              </p>
+              <div class="achievements-list">
+                <div class="achievement-item">
+                  <i class="fas fa-globe"></i>
+                  <div>
+                    <strong>UN SDG Advocacy</strong>
+                    <span
+                      >Led campus awareness sessions for sustainable development
+                      solutions</span
+                    >
+                  </div>
+                </div>
+                <div class="achievement-item">
+                  <i class="fas fa-handshake"></i>
+                  <div>
+                    <strong>Team Coordination</strong>
+                    <span
+                      >Mentored student teams pitching innovative tech
+                      solutions</span
+                    >
+                  </div>
+                </div>
+                <div class="achievement-item">
+                  <i class="fas fa-calendar-check"></i>
+                  <div>
+                    <strong>Event Management</strong>
+                    <span
+                      >Successfully hosted on-campus final event of
+                      international competition</span
+                    >
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <!-- Contact Section -->
-      <section class="contact" id="contact" data-aos="fade-up">
-        <h2>Let's Build Something Amazing</h2>
-        <p>
-          Ready to discuss your automotive tech challenges or explore new
-          opportunities?
-        </p>
-        <div class="contact-links">
-          <a href="mailto:sitaneupane5700@gmail.com"
-            ><i class="fas fa-envelope"></i> Email</a
-          >
-          <a
-            href="https://linkedin.com/in/sita-neupane-324755159/"
-            target="_blank"
-            ><i class="fab fa-linkedin"></i> LinkedIn</a
-          >
-          <a href="https://github.com/sita12" target="_blank"
-            ><i class="fab fa-github"></i> GitHub</a
-          >
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+      <div class="container">
+        <div class="section-header" data-aos="fade-up">
+          <span class="section-tag">Let's Connect</span>
+          <h2 class="section-title">Ready to Build Something Amazing?</h2>
+          <p class="section-description">
+            Whether you're looking to revolutionize automotive commerce or
+            explore new technology frontiers, let's discuss how we can create
+            impactful solutions together.
+          </p>
         </div>
-      </section>
+        <div class="contact-content">
+          <div class="contact-info" data-aos="fade-right">
+            <h3>Get In Touch</h3>
+            <div class="contact-methods">
+              <a href="mailto:sitaneupane5700@gmail.com" class="contact-method">
+                <div class="method-icon">
+                  <i class="fas fa-envelope"></i>
+                </div>
+                <div class="method-info">
+                  <span class="method-label">Email</span>
+                  <span class="method-value">sitaneupane5700@gmail.com</span>
+                </div>
+              </a>
+              <a
+                href="https://linkedin.com/in/sita-neupane-324755159/"
+                target="_blank"
+                class="contact-method"
+              >
+                <div class="method-icon">
+                  <i class="fab fa-linkedin"></i>
+                </div>
+                <div class="method-info">
+                  <span class="method-label">LinkedIn</span>
+                  <span class="method-value">Connect with me</span>
+                </div>
+              </a>
+              <a
+                href="https://github.com/sita12"
+                target="_blank"
+                class="contact-method"
+              >
+                <div class="method-icon">
+                  <i class="fab fa-github"></i>
+                </div>
+                <div class="method-info">
+                  <span class="method-label">GitHub</span>
+                  <span class="method-value">View my code</span>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="contact-cta" data-aos="fade-left">
+            <div class="cta-content">
+              <h3>Let's Collaborate</h3>
+              <p>
+                I'm always excited to discuss innovative projects, especially
+                those involving:
+              </p>
+              <ul class="collaboration-list">
+                <li>Automotive technology solutions</li>
+                <li>Complex system integrations</li>
+                <li>Scalable backend architectures</li>
+                <li>API ecosystem design</li>
+              </ul>
+              <a
+                href="mailto:sitaneupane5700@gmail.com"
+                class="btn btn-primary"
+              >
+                <span>Start a Conversation</span>
+                <i class="fas fa-paper-plane"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-      <!-- Footer -->
-      <footer>
-        <p>© 2025 Sita Neupane</p>
-        <span class="footer-heart"
-          >Built with <i class="fas fa-heart pulse"></i
-        ></span>
-      </footer>
-    </div>
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-text">
+            <p>&copy; 2025 Sita Neupane. Crafted with passion and precision.</p>
+          </div>
+          <div class="footer-links">
+            <a href="#hero">Top</a>
+            <a href="mailto:sitaneupane5700@gmail.com">Email</a>
+            <a
+              href="https://linkedin.com/in/sita-neupane-324755159/"
+              target="_blank"
+              >LinkedIn</a
+            >
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
+      // Initialize AOS
       AOS.init({
-        duration: 1000,
+        duration: 800,
+        easing: "ease-out-cubic",
         once: true,
+        offset: 50,
       });
+
+      // Mobile menu toggle
+      const mobileMenu = document.getElementById("mobile-menu");
+      const navMenu = document.getElementById("nav-menu");
+
+      mobileMenu.addEventListener("click", function () {
+        mobileMenu.classList.toggle("is-active");
+        navMenu.classList.toggle("active");
+      });
+
+      // Smooth scrolling for navigation links
+      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+        anchor.addEventListener("click", function (e) {
+          e.preventDefault();
+          const target = document.querySelector(this.getAttribute("href"));
+          if (target) {
+            target.scrollIntoView({
+              behavior: "smooth",
+              block: "start",
+            });
+            // Close mobile menu if open
+            navMenu.classList.remove("active");
+            mobileMenu.classList.remove("is-active");
+          }
+        });
+      });
+
+      // Navbar background on scroll
+      window.addEventListener("scroll", function () {
+        const navbar = document.getElementById("navbar");
+        if (window.scrollY > 50) {
+          navbar.classList.add("scrolled");
+        } else {
+          navbar.classList.remove("scrolled");
+        }
+      });
+
+      // Typing animation
+      const typingText = document.querySelector(".typing-text");
+      if (typingText) {
+        const text = typingText.textContent;
+        typingText.textContent = "";
+        let i = 0;
+
+        function typeWriter() {
+          if (i < text.length) {
+            typingText.textContent += text.charAt(i);
+            i++;
+            setTimeout(typeWriter, 50);
+          }
+        }
+
+        setTimeout(typeWriter, 1000);
+      }
     </script>
   </body>
 </html>
